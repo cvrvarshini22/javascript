@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    document.write("while loop<br>");
+    let num = parseInt(prompt("Enter a number"));
+    let a = 1;
+    while(a <= 10){
+        document.write(num + " x " + a + " = " + (num * a) + "<br>");
+        a++;
+    }
+
+    document.write("<br>do while loop<br>");
+    let b = 1;
+    do{
+        document.write(num + " x " + b + " = " + (num * b) + "<br>");
+        b++;
+    } while(b <= 10);
+</script>
+
+</body>
+</html>
