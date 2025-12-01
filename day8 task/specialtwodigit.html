@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num = parseInt(prompt("Enter a two-digit number"));
+    if(num < 10 || num > 99){
+    document.write("Please enter a two-digit number only<br>");
+    } else {
+    let tens = parseInt(num / 10);
+    let units = num % 10;
+    let sum = tens + units;
+    let product = tens * units;
+    if(sum + product === num){
+        document.write(num + " is a special two-digit number<br>");
+    } else {
+        document.write(num + " is NOT a special two-digit number<br>");
+    }
+    }
+</script>
+
+</body>
+</html>

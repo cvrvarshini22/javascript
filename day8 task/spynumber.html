@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num = parseInt(prompt("Enter a number"));
+    let sum = 0, product = 1, temp = num;
+    while (temp > 0) {
+    let digit = temp % 10;
+    sum += digit;
+    product *= digit;
+    temp = parseInt(temp / 10);
+    }
+    if (sum === product) {
+    document.write(num + " is a Spy Number<br>");
+    } else {
+    document.write(num + " is NOT a Spy Number<br>");
+    }
+</script>
+
+</body>
+</html>

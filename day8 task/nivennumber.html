@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num = parseInt(prompt("Enter a number"));
+    let temp = num;
+    let sum = 0;
+    while (temp > 0) {
+    let digit = temp % 10;
+    sum += digit;
+    temp = parseInt(temp / 10);
+    }
+    if (num % sum === 0) {
+    document.write(num + " is a Niven Number<br>");
+    } else {
+    document.write(num + " is NOT a Niven Number<br>");
+    }
+</script>
+</body>
+</html>
