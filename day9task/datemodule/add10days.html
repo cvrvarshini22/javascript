@@ -8,9 +8,10 @@
 <body>
     <script>
         let date = new Date();
+        document.write("current date: ",date.toLocaleDateString()+"<br>")
         date.setDate(date.getDate() + 10);
         document.write("After adding 10 days: " + date + "<br><br>");
-
     </script>
 </body>
+
 </html>
