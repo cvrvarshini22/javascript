@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sentence = prompt("Enter a sentence");
+        let word = prompt("Enter a word to search");
+        sentence = sentence.toLowerCase();
+        word = word.toLowerCase();
+        let words = sentence.split(" ");
+        let count = 0;
+        for (let i = 0; i < words.length; i++) {
+            if (words[i] === word) {
+                count++;
+            }
+        }
+        document.write("Word '" + word + "' appears " + count + " times.");
+
+    </script>
+</body>
+</html>
