@@ -1,0 +1,1 @@
+document.body.innerHTML+=("lets startr a fresh leeson about javascript")
