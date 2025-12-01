@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var mul = (arr) => {
+        let result = 1;
+        for (let a = 0; a < arr.length; a++) {
+            result = result * arr[a];
+        }
+        return result;
+    }
+    let size = parseInt(prompt("Enter size"));
+    document.write("Enter size: " + size + "<br>");
+    let numbers = [];
+    for (let a = 0; a < size; a++) {
+        numbers[a] = parseInt(prompt("Enter number " + (a+1)));
+        document.write("Enter number " + (a+1) + ": " + numbers[a] + "<br>");
+    }
+    document.write("Multiply number is: " + mul(numbers));
+</script>
+
+
+
+</body>
+</html>
