@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects Display</title>
+</head>
+<body>
+
+<script>
+   
+    const year = prompt("Enter your year (1, 2, 3, 4)");
+    const semester = prompt("Enter your semester (1 or 2)");
+
+    switch(year) {
+        case "1":
+            switch(semester) {
+                case "1":
+                    document.write("Subjects for 1st Year, 1st Semester:<br>");
+                    document.write("1. Mathematics I<br>");
+                    document.write("2. Tamil<br>");
+                    document.write("3. English<br>");
+                    document.write("4. Computer Fundamentals<br>");
+                    document.write("5. English Communication<br>");
+                    break;
+                case "2":
+                    document.write("Subjects for 1st Year, 2nd Semester:<br>");
+                    document.write("1. Java<br>");
+                    document.write("2. English part II<br>");
+                    document.write("3. Tamil<br>");
+                    document.write("4. Programming in C<br>");
+                    document.write("5. Environmental Science<br>");
+                    break;
+                default:
+                    document.write("Invalid semester");
+            }
+            break;
+
+        case "2":
+            switch(semester) {
+                case "1":
+                    document.write("Subjects for 2nd Year, 1st Semester:<br>");
+                    document.write("1. Data Structures<br>");
+                    document.write("2. Programming in C++<br>");
+                    document.write("3. Operating Systems<br>");
+                    document.write("4. Python<br>");
+                    document.write("5. Communication Skills<br>");
+                    break;
+                case "2":
+                    document.write("Subjects for 2nd Year, 2nd Semester:<br>");
+                    document.write("1. Database Management Systems<br>");
+                    document.write("2. Computer Networks<br>");
+                    document.write("3. Software Engineering<br>");
+                    document.write("4. Object Oriented Programming<br>");
+                    document.write("5. Probability and Statistics<br>");
+                    break;
+                default:
+                    document.write("Invalid semester");
+            }
+            break;
+
+        case "3":
+            switch(semester) {
+                case "1":
+                    document.write("Subjects for 3rd Year, 1st Semester:<br>");
+                    document.write("1. SQL<br>");
+                    document.write("2. Fundamental Mathematical<br>");
+                    document.write("3. Design & Analysis of Algorithms<br>");
+                    document.write("4. Theory Of Automation<br>");
+                    document.write("5. Basics of HTML<br>");
+                    break;
+                case "2":
+                    document.write("Subjects for 3rd Year, 2nd Semester:<br>");
+                    document.write("1. Software Testing<br>");
+                    document.write("2. MySQL<br>");
+                    document.write("3. Python<br>");
+                    document.write("4. Project<br>");
+                    document.write("5. Tamil<br>");
+                    break;
+                default:
+                    document.write("Invalid semester");
+            }
+            break;
+
+        case "4":
+            switch(semester) {
+                case "1":
+                    document.write("Subjects for 4th Year, 1st Semester:<br>");
+                    document.write("1. Project Work I<br>");
+                    document.write("2. Advanced Java<br>");
+                    document.write("3. Cyber Security<br>");
+                    document.write("4. Elective IV<br>");
+                    document.write("5. Elective V<br>");
+                    break;
+                case "2":
+                    document.write("Subjects for 4th Year, 2nd Semester:<br>");
+                    document.write("1. Project Work II<br>");
+                    document.write("2. Machine Learning<br>");
+                    document.write("3. Internet of Things (IoT)<br>");
+                    document.write("4. Elective VI<br>");
+                    document.write("5. Elective VII<br>");
+                    break;
+                default:
+                    document.write("Invalid semester");
+            }
+            break;
+
+        default:
+            document.write("Invalid year");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Ask the user for marks
+    const aptitude = parseInt(prompt("Enter your Aptitude score"));
+    const gd = parseInt(prompt("Enter your GD score"));
+    const technical = parseInt(prompt("Enter your Technical score"));
+    const hr = parseInt(prompt("Enter your HR score"));
+
+    
+    if(aptitude >= 85){
+        if(gd >= 90){
+            if(technical >= 80){
+                if(hr >= 95){
+                    document.write("Congratulations! You are eligible for the job.");
+                } else {
+                    document.write("Not eligible: HR score is less than 95.");
+                }
+            } else {
+                document.write("Not eligible: Technical score is less than 80.");
+            }
+        } else {
+            document.write("Not eligible: GD score is less than 90.");
+        }
+    } else {
+        document.write("Not eligible: Aptitude score is less than 85.");
+    }
+</script>
+</body>
+</html>

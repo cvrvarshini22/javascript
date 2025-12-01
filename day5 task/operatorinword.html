@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var A = parseInt(prompt("Enter first number"));
+    var B = parseInt(prompt("Enter second number"));
+    var C = prompt("Enter your choice (add / sub / mul / div)");
+    document.write("A = " + A + "<br>");
+    document.write("B = " + B + "<br>");
+
+    if(C == "add"){
+        document.write("The addition is:  " +(A + B)+ "<br>");
+    }
+    else if(C == "sub"){
+        document.write("The subtraction is: "+(A-B)+"<br>");
+    }
+    else if(C == "mul"){
+        document.write("The subtraction of number is: "+(A * B)+"<br>");
+    }
+    else if(C == "Div"){
+        document.write("The division of number is: "+(A / B)+"<br>");
+    }
+    else{
+        document.write("Invalid Choice");
+    }
+</script>
+</body>
+</html>
