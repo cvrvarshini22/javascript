@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+    var price = parseFloat(prompt("Enter price of one item"));
+    var qty = parseInt(prompt("Enter quantity"));
+
+    var total = price * qty;
+
+    if(total > 1000){
+        var discount = total * 0.10;
+        var finalAmount = total - discount;
+        document.write("10% discount applied. Final amount = " + finalAmount);
+    }
+    else{
+        document.write("No discount. Total amount = " + total);
+    }
+
+
+
+    </script>
+</body>
+</html>

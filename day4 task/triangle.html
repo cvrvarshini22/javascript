@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a = parseInt(prompt("Enter side 1"));
+    var b = parseInt(prompt("Enter side 2"));
+    var c = parseInt(prompt("Enter side 3"));
+
+    if(a == b && b == c){
+        document.write("Triangle is Equilateral");
+    }
+    else if(a == b || b == c || a == c){
+        document.write("Triangle is Isosceles");
+    }
+    else{
+        document.write("Triangle is Scalene");
+    }
+</script>
+
+</body>
+</html>
